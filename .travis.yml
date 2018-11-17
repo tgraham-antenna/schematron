@@ -24,5 +24,6 @@ before_script:
 
 script:
     - cd trunk/schematron/test
+    - git submodule update
     - echo "execute bats unit tests"
     - bats --tap schematron.bats
